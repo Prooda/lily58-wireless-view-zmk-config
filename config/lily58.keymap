@@ -29,8 +29,6 @@
 &kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V            &kp B      &ext_power EP_TOG    &kp RBKT  &kp N          &kp M             &kp COMMA          &kp DOT  &kp FSLH          &kp RSHFT
                                   &kp LALT  &kp PRINTSCREEN  &kp SPACE  &to 1                &to 2     &kp BACKSPACE  &kp K_CALCULATOR  &kp RIGHT_CONTROL
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
@@ -43,14 +41,12 @@
 
             display-name = "layer 1";
             bindings = <
-&trans  &trans            &trans             &trans        &trans           &trans                    &kp KP_NUMLOCK  &kp KP_DIVIDE    &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &trans
+&trans  &trans            &kp F2             &kp F3        &trans           &trans                    &kp KP_NUMLOCK  &kp KP_DIVIDE    &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &trans
 &trans  &trans            &kp K_VOLUME_DOWN  &kp UP_ARROW  &kp K_VOLUME_UP  &trans                    &kp F7          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &trans
 &trans  &kp K_PLAY_PAUSE  &kp LEFT           &kp DOWN      &kp RIGHT        &trans                    &kp CARET       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &trans
 &trans  &trans            &trans             &trans        &trans           &trans  &trans    &trans  &kp KP_DOT      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL     &trans
-                                             &trans        &trans           &trans  &to 0     &to 0   &trans          &trans           &trans
+                                             &trans        &trans           &trans  &to 0     &to 0   &trans          &kp KP_NUMBER_0  &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -69,8 +65,6 @@
 &kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12       &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
                                         &trans        &trans        &trans        &to 0     &to 0   &trans       &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         extra_1 { status = "reserved"; };
