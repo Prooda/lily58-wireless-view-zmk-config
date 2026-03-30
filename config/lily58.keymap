@@ -9,9 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    keymap {
-
-/ {
     behaviors {
         to_mo: to_mo {
             compatible = "zmk,behavior-hold-tap";
